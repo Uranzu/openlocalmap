@@ -173,7 +173,7 @@ map.addControl(loadingControl);
 if (!map.restoreView()) {
 // +++++ Coordinates (lat,lon) for local place +++++
 //+++++++++ MODIFICAR AQUÍ ++++++++++++
-    map.setView([41.2214 , 1.7169], 15);
+    map.setView([43.3340 , -1.8035], 15);
 }
 
 var query = '';
@@ -228,7 +228,7 @@ function addr_search() {
 
 // +++++ &viewbox=1.9341,41.4200,1.9886,41.3993&bounded=1 --> Coordinates (lat,long) for search box +++++
 // +++++++++ MODIFICAR AQUÍ +++++++++++
-    $.getJSON('https://nominatim.openstreetmap.org/search?format=json&viewbox=1.68434,41.23761,1.76502,41.20533&bounded=1&limit=5&q=' + inp.value, function(data) {
+    $.getJSON('https://nominatim.openstreetmap.org/search?format=json&viewbox=-1.84854,43.34809,-1.74211,43.31687&bounded=1&limit=5&q=' + inp.value, function(data) {
         var items = [];
 
         $.each(data, function(key, val) {
